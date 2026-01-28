@@ -4,19 +4,19 @@ import pattern2 from '../assets/vector2.png';
 
 const Banner = ({ inProgressCount, resolvedCount }) => {
     
-    // ডিবাগ করার জন্য: কনসোলে চেক করুন ইমেজ লোড হচ্ছে কিনা
+    
     console.log("Pattern 1:", pattern1);
     console.log("Pattern 2:", pattern2);
 
     return (
         <div className="container mx-auto px-10 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            {/* In-Progress Card (Purple) */}
+            
             <div 
                 className="relative w-full h-[220px] rounded-xl shadow-lg transform transition hover:scale-[1.02] 
                            flex flex-col justify-center items-center text-white"
                 style={{ 
-                    // Gradient-এ সামান্য অপাসিটি (0.9) ব্যবহার করা হয়েছে
+                   
                     backgroundImage: `linear-gradient(to right, rgba(124, 58, 237, 0.9), rgba(167, 139, 250, 0.9)), url(${pattern1})`,
                     backgroundBlendMode: 'overlay', 
                     backgroundSize: 'cover',
@@ -27,12 +27,12 @@ const Banner = ({ inProgressCount, resolvedCount }) => {
                 <p className="text-7xl font-bold drop-shadow-md">{inProgressCount}</p>
             </div>
 
-            {/* Resolved Card (Green) */}
+            
             <div 
                 className="relative w-full h-[220px] rounded-xl shadow-lg transform transition hover:scale-[1.02] 
                            flex flex-col justify-center items-center text-white"
                 style={{ 
-                    // Gradient-এ সামান্য অপাসিটি (0.9) ব্যবহার করা হয়েছে যাতে নিচের ইমেজ দেখা যায়
+                    
                     backgroundImage: `linear-gradient(to right, rgba(34, 197, 94, 0.9), rgba(52, 211, 153, 0.9)), url(${pattern2})`,
                     backgroundBlendMode: 'overlay', 
                     backgroundSize: 'cover',
