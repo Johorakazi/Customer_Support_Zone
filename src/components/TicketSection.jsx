@@ -94,7 +94,7 @@ const TicketSection = ({
                                 <h4 className="font-semibold text-sm text-gray-800 mb-3">{ticket.title}</h4>
                                 <button 
                                     onClick={() => handleComplete(ticket.id)}
-                                    className="w-full bg-[#10B981] hover:bg-green-600 text-white text-sm font-semibold py-2 rounded shadow-sm transition-colors"
+                                    className="w-full bg-green-600 hover:bg-green-600 text-white text-sm font-semibold py-2 rounded shadow-sm transition-colors"
                                 >
                                     Complete
                                 </button>
